@@ -26,7 +26,7 @@ void dcts_init () {
     strcpy (meas[0].unit, "АC");
     meas[0].value = 0;
     
-    strcpy (meas[1].name, "Rh");
+    strcpy (meas[1].name, "Ты");
     strcpy (meas[1].unit, "%");
     meas[1].value = 0;
 }

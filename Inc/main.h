@@ -1,3 +1,4 @@
+/* USER CODE BEGIN Header */
 /**
   ******************************************************************************
   * @file           : main.h
@@ -10,7 +11,7 @@
   * inserted by the user or by software development tools
   * are owned by their respective copyright owners.
   *
-  * Copyright (c) 2018 STMicroelectronics International N.V. 
+  * Copyright (c) 2019 STMicroelectronics International N.V. 
   * All rights reserved.
   *
   * Redistribution and use in source and binary forms, with or without 
@@ -46,13 +47,20 @@
   *
   ******************************************************************************
   */
+/* USER CODE END Header */
 
 /* Define to prevent recursive inclusion -------------------------------------*/
-#ifndef __MAIN_H__
-#define __MAIN_H__
+#ifndef __MAIN_H
+#define __MAIN_H
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /* Includes ------------------------------------------------------------------*/
+#include "stm32f1xx_hal.h"
 
+/* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
       
 #define OLED_FON SSD1306_COLOR_BLACK
@@ -60,32 +68,55 @@
 
 /* USER CODE END Includes */
 
-/* Private define ------------------------------------------------------------*/
+/* Exported types ------------------------------------------------------------*/
+/* USER CODE BEGIN ET */
 
+/* USER CODE END ET */
+
+/* Exported constants --------------------------------------------------------*/
+/* USER CODE BEGIN EC */
+
+/* USER CODE END EC */
+
+/* Exported macro ------------------------------------------------------------*/
+/* USER CODE BEGIN EM */
+
+/* USER CODE END EM */
+
+/* Exported functions prototypes ---------------------------------------------*/
+void Error_Handler(void);
+
+/* USER CODE BEGIN EFP */
+
+/* USER CODE END EFP */
+
+/* Private defines -----------------------------------------------------------*/
 #define LED_Pin GPIO_PIN_13
 #define LED_GPIO_Port GPIOC
-#define D7_Pin GPIO_PIN_9
-#define D7_GPIO_Port GPIOA
-#define D6_Pin GPIO_PIN_10
-#define D6_GPIO_Port GPIOA
-#define D5_Pin GPIO_PIN_11
-#define D5_GPIO_Port GPIOA
-#define D4_Pin GPIO_PIN_12
-#define D4_GPIO_Port GPIOA
-#define E_Pin GPIO_PIN_6
-#define E_GPIO_Port GPIOB
-#define RW_Pin GPIO_PIN_7
-#define RW_GPIO_Port GPIOB
-#define RS_Pin GPIO_PIN_8
-#define RS_GPIO_Port GPIOB
-
-/* ########################## Assert Selection ############################## */
-/**
-  * @brief Uncomment the line below to expanse the "assert_param" macro in the 
-  *        HAL drivers code
-  */
-/* #define USE_FULL_ASSERT    1U */
-
+#define AM2302_Pin GPIO_PIN_0
+#define AM2302_GPIO_Port GPIOA
+#define NTC_Pin GPIO_PIN_1
+#define NTC_GPIO_Port GPIOA
+#define DISP_SCL_Pin GPIO_PIN_10
+#define DISP_SCL_GPIO_Port GPIOB
+#define DISP_SDA_Pin GPIO_PIN_11
+#define DISP_SDA_GPIO_Port GPIOB
+#define COM_Pin GPIO_PIN_12
+#define COM_GPIO_Port GPIOA
+#define LEFT_Pin GPIO_PIN_15
+#define LEFT_GPIO_Port GPIOA
+#define RIGHT_Pin GPIO_PIN_3
+#define RIGHT_GPIO_Port GPIOB
+#define DOWN_Pin GPIO_PIN_4
+#define DOWN_GPIO_Port GPIOB
+#define UP_Pin GPIO_PIN_5
+#define UP_GPIO_Port GPIOB
+#define OK_Pin GPIO_PIN_6
+#define OK_GPIO_Port GPIOB
+#define SET_Pin GPIO_PIN_7
+#define SET_GPIO_Port GPIOB
+#define BREAK_Pin GPIO_PIN_8
+#define BREAK_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 
 typedef enum    {RUN = 0, GET_TIME, SET_TIME, SET_DATE, WRITE_RTC} state_type;
@@ -93,15 +124,9 @@ typedef enum    {RUN = 0, GET_TIME, SET_TIME, SET_DATE, WRITE_RTC} state_type;
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus
- extern "C" {
-#endif
-void _Error_Handler(char *, int);
-
-#define Error_Handler() _Error_Handler(__FILE__, __LINE__)
-#ifdef __cplusplus
 }
 #endif
 
-#endif /* __MAIN_H__ */
+#endif /* __MAIN_H */
 
 /************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/

@@ -12,7 +12,7 @@
         <ByteLimit>50</ByteLimit>
     </Stack>
     <StLinkDriver>
-        <stlinkserialNo>42360587</stlinkserialNo>
+        <stlinkserialNo>00000001</stlinkserialNo>
         <stlinkfoundProbes />
         <stlinkResetStyle>0</stlinkResetStyle>
         <stlinkResetStrategy>3</stlinkResetStrategy>
@@ -20,7 +20,7 @@
         <LeaveTargetRunning>_ 0</LeaveTargetRunning>
     </StLinkDriver>
     <DebugChecksum>
-        <Checksum>1527706663</Checksum>
+        <Checksum>2536898466</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -54,6 +54,10 @@
         <ITMportsLogFile>0</ITMportsLogFile>
         <ITMlogFile>$PROJ_DIR$\ITM.log</ITMlogFile>
     </SWOTraceHWSettings>
+    <JLinkDriver>
+        <CStepIntDis>_ 0</CStepIntDis>
+        <LeaveTargetRunning>_ 0</LeaveTargetRunning>
+    </JLinkDriver>
     <struct_types>
         <Fmt0>am2302_data_t-hum	4	0</Fmt0>
         <Fmt1>am2302_data_t-tmpr	4	0</Fmt1>

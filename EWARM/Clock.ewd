@@ -826,7 +826,7 @@
                 </option>
                 <option>
                     <name>CCJLinkInterfaceRadio</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
                 <option>
                     <name>CCJLinkResetList</name>
@@ -1021,7 +1021,7 @@
                 </option>
                 <option>
                     <name>CCCpuClockEdit</name>
-                    <state>72.0</state>
+                    <state>56.0</state>
                 </option>
                 <option>
                     <name>CCSwoClockAuto</name>

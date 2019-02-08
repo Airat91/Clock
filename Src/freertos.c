@@ -1,3 +1,4 @@
+/* USER CODE BEGIN Header */
 /**
   ******************************************************************************
   * File Name          : freertos.c
@@ -9,7 +10,7 @@
   * inserted by the user or by software development tools
   * are owned by their respective copyright owners.
   *
-  * Copyright (c) 2018 STMicroelectronics International N.V. 
+  * Copyright (c) 2019 STMicroelectronics International N.V. 
   * All rights reserved.
   *
   * Redistribution and use in source and binary forms, with or without 
@@ -45,23 +46,39 @@
   *
   ******************************************************************************
   */
+/* USER CODE END Header */
 
 /* Includes ------------------------------------------------------------------*/
 #include "FreeRTOS.h"
 #include "task.h"
+#include "main.h"
 
+/* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */     
 
 /* USER CODE END Includes */
 
-/* Variables -----------------------------------------------------------------*/
+/* Private typedef -----------------------------------------------------------*/
+/* USER CODE BEGIN PTD */
 
+/* USER CODE END PTD */
+
+/* Private define ------------------------------------------------------------*/
+/* USER CODE BEGIN PD */
+
+/* USER CODE END PD */
+
+/* Private macro -------------------------------------------------------------*/
+/* USER CODE BEGIN PM */
+
+/* USER CODE END PM */
+
+/* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN Variables */
 
 /* USER CODE END Variables */
 
-/* Function prototypes -------------------------------------------------------*/
-
+/* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
 
 /* USER CODE END FunctionPrototypes */
@@ -69,8 +86,6 @@
 /* Pre/Post sleep processing prototypes */
 void PreSleepProcessing(uint32_t *ulExpectedIdleTime);
 void PostSleepProcessing(uint32_t *ulExpectedIdleTime);
-
-/* Hook prototypes */
 
 /* USER CODE BEGIN PREPOSTSLEEP */
 __weak void PreSleepProcessing(uint32_t *ulExpectedIdleTime)
@@ -84,6 +99,7 @@ __weak void PostSleepProcessing(uint32_t *ulExpectedIdleTime)
 }
 /* USER CODE END PREPOSTSLEEP */
 
+/* Private application code --------------------------------------------------*/
 /* USER CODE BEGIN Application */
      
 /* USER CODE END Application */
